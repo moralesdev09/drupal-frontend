@@ -1,0 +1,29 @@
+<h1>Operators</h1>
+
+{%set active=true %}
+{% set array=['1','2','3','4'] %}
+{% set array2=[] %}
+{% set numb=6 %}
+
+{% if active %}
+  <h2>Is Active</h2>
+{% endif %}
+
+{% for item in array %}
+  <h3>{{ item }}</h3>
+{% endfor %}
+
+{% if active is defined %} {# Verifica si existe #}
+   <h4>Active is defined</h4>
+{% endif %}
+
+{% if array2 is empty %} {# Verifica si está vacía #}
+  <h4>Array2 is empty</h4>
+{% endif %}
+
+{% if array is iterable %} {# Si es un array/objeto iterable #}
+  <h4>Array1 is iterable</h4>
+{% endif %}
+{% if numb is divisible by(3) %} {# Si es divisible #}
+  <h4>Numb is divisible by 3</h4>
+{% endif %}

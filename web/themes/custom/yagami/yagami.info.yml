@@ -1,0 +1,22 @@
+name: yagami
+type: theme
+'base theme': stable9
+version: 1.0.0
+libraries:
+  - yagami/base
+  - yagami/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - yagami/user
+  core/drupal.dropbutton:
+    - yagami/dropbutton
+  core/drupal.dialog:
+    - yagami/dialog
+  file/drupal.file:
+    - yagami/file
+  core/drupal.progress:
+    - yagami/progress
+description: ''
+core_version_requirement: ^11
+generator: 'starterkit_theme:11.1.6'

@@ -1,0 +1,38 @@
+{#Variables#}
+{% set variable = 'valor' %}
+{% set other_variable = 42 %}
+{% set active = true %}
+{% set var1, var2 = 'valor1', 'valor2' %}
+
+{#Variables-Block#}
+{% set contenido %}
+  <div class="especial">
+    <p>Este contenido se guarda en la variable</p>
+  </div>
+{% endset %}
+
+{# Filters #}
+{{ variable|upper }}          {# Mayúsculas #}
+{{ variable|lower }}          {# Minúsculas #}
+{{ variable|title }}          {# Primera letra mayúscula #}
+{{ variable|capitalize }}     {# Primera letra de cada palabra mayúscula #}
+{{ variable|default("valor por defecto") }} {# Valor por defecto #}
+{{ variable|length }}         {# Longitud de array/string #}
+{{ variable|slice(0, 3) }}    {# Subcadena #}
+{{ variable|join(', ') }}     {# Unir array #}
+{{ variable|date('Y-m-d') }}  {# Formatear fecha #}
+{{ variable|striptags }}      {# Eliminar etiquetas HTML #}
+{{ variable|trim }}           {# Eliminar espacios #}
+{{ variable|raw }}            {# Desactivar escape automático (usar con cuidado) #}
+{#Conditionals#}
+
+{#Drupal_Variables#}
+{#{{ url }}           #}{# URL actual #}
+{#{{ term }}          #}{# Término de taxonomía #}
+{#{{ user }}          #}{# Usuario actual #}
+{#{{ view }}          #}{# Vista actual #}
+{#{{ node }}          #}{# Objeto del nodo actual #}
+{#{{ theme_path }}    #}{# Ruta al tema actual #}
+{#{{ directory }}     #}{# Directorio del tema #}
+
+

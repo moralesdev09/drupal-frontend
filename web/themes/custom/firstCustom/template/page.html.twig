@@ -1,0 +1,9 @@
+{# ejemplo: themes/custom/mi_tema/templates/mi-plantilla.html.twig #}
+<div class="contenido-estatico">
+  <h2>Título estático</h2>
+  <p>Este es un párrafo de contenido estático que aparecerá siempre igual.</p>
+ <p>Otro p</p>
+  {# También puedes incluir imágenes #}
+  <img src="{{ base_path ~ directory }}/images/mi-imagen.jpg" alt="Descripción">
+</div>
+{% include '@firstCustom/template/loops.html.twig' %}

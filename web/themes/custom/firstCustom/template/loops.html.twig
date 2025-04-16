@@ -1,0 +1,22 @@
+<h1>Loops</h1>
+
+{% set array=[] %}
+
+{% for item in array %}
+  {{ item }}
+{% else %}
+  <p>No hay usuarios disponibles</p>
+{% endfor %}
+
+{% for i in 0..10 %}
+  {{ i }},
+{% endfor %}
+
+{% for letter in 'a'..'z' %}
+  {{ letter }},
+{% endfor %}
+
+{% set filtered_items = items|filter(item => item.published) %}
+{% set sorted_items = items|sort((a, b) => a.weight <=> b.weight) %}
+{% set merged_arrays = array1|merge(array2) %}
+{% set sliced_items = items|slice(1, 3) %}

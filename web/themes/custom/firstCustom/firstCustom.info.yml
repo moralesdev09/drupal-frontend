@@ -1,0 +1,11 @@
+name: 'First Custom'
+type: theme
+description: 'Mi primer tema personalizado'
+core_version_requirement: ^9 || ^10 || ^11
+base theme: false
+regions:
+  header: 'Header'
+  content: 'Content'
+  footer: 'Footer'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
